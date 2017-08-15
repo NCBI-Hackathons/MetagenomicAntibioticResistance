@@ -13,20 +13,20 @@ do
   # run magicblast using the CARD gene_homology 
   if [$READ0COUNT -lt $READ1COUNT -a $READ1COUNT -eq $READ2COUT ]
   then 
-    magicblast -infmt fastq -query $tmp_read_one -query_mate $tmp_read_two -out $OUT_DIR/$sra.CARD_gene.sam -db ~/references/CARD_gene
+    magicblast1.3  -infmt fastq -query $tmp_read_one -query_mate $tmp_read_two -out $OUT_DIR/$sra.CARD_gene.sam -db ~/references/CARD_gene
   else [$READ1COUNT -lt $READ0COUNT -a -s $READ0COUNT ]
   then
-    magicblast -infmt fastq -query $tmp_read_zero -out $OUT_DIR/$sra.CARD_gene.sam -db ~/references/CARD_gene  
+    magicblast1.3 -infmt fastq -query $tmp_read_zero -out $OUT_DIR/$sra.CARD_gene.sam -db ~/references/CARD_gene  
   samtools view -bS $OUT_DIR/$sra.CARD_gene.sam | samtools sort - $OUT_DIR/$sra.CARD_gene.bam
   rm 
   # run magic blast using CARD gene_variant
   if [$READ0COUNT -lt $READ1COUNT -a $READ1COUNT -eq $READ2COUT ]
   then
-    magicblast -infmt fastq -query $tmp_read_one -query_mate $tmp_read_two -out $OUT_DIR/$sra.CARD_variant.sam -db ~/references/CARD_variant
+    magicblast1.3 -infmt fastq -query $tmp_read_one -query_mate $tmp_read_two -out $OUT_DIR/$sra.CARD_variant.sam -db ~/references/CARD_variant
   else [$READ1COUNT -lt $READ0COUNT -a -s $READ0COUNT ]
   then
-    magicblast -infmt fastq -query $tmp_read_zero -out $OUT_DIR/$sra.CARD_variant.sam -db ~/references/CARD_variant
+    magicblast1.3  -infmt fastq -query $tmp_read_zero -out $OUT_DIR/$sra.CARD_variant.sam -db ~/references/CARD_variant
 magicblast -sra $sra -db references/CARD.nhr -num_threads 12 -out ~/references/outcome_sam_folder_vCARD
   # process above bamfiles
-  samtools bam2fq input.bam | seqtk seq -A > output.fa
+  # samtools bam2fq input.bam | seqtk seq -A > output.fa
 done > folderOfFinal_output
