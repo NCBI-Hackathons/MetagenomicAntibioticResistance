@@ -3,20 +3,43 @@
 # Locating Antibiotic Resistance Signatures in Metagenomic Datasets
 Lead: Steve - SysAdm: Greg, Dan, Sherif - Writers: Matt, Aleksei
 
-Objective - Create a reusable, reproducible, scalable, interoperable workflow 
-to locate antimicrobial resistant genomic signatures in SRA shot-gun sequencing (metagenomics) Datasets
+<i>Objective</i> - Create a reusable, reproducible, scalable, interoperable workflow 
+to locate antimicrobial resistant genomic signatures in SRA shotgun sequencing (metagenomics) datasets
 
-Deliverables - Documented workflow with containerized tools
+<i>Dependencies</i>
+
+Software:
+- MagicBLAST 1.3beta
+- SAMtools 1.3.1
+- STAR
+- Docker
+
+Pre-assembled DBs for BLAST:
+- hg19
+- CARD (Comprehensive Antibiotic Resistance Database) DB
+- RefSeq Reference Bacterial Genomes
+
+<i>Deliverables</i> - Documented workflow with containerized tools
 
 
-Instalation:
+<i>Instalation:</i>
 
 
-Usage:
+<i>Usage:</i>
 scaleupUpScript.sh <options> -S SRA -o output_directory
 
-Output:
+<i>Input:</i>
+SRA accession numbers (ERR or SRR)
+or
+FASTQ files
 
+<i>Output:</i>
+Table (in CSV or TAB-delimited format) with the next columns:
+- Accession number (Nucleotide/Protein)
+- Name
+- ARO (Antibiotic Resistance Ontology)
+- Score
+- Resistance type
 
-Warnings:
+<i>Warnings:</i>
 
