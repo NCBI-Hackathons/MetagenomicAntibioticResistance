@@ -1,6 +1,6 @@
 # MetagenomicAntibioticResistance
 
-### Locating Antibiotic Resistance Signatures in Metagenomic Datasets
+### A Simple Method for Extracting Antimicrobial Resistance Information from Metagenomes
 ##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Dan, Sherif Farag - Writers: Matthew Moss, Alexey V. Rakov
 
 
