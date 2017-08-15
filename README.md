@@ -27,6 +27,10 @@ CARD (Comprehensive Antibiotic Resistance Database) DB [link](https://card.mcmas
 
 RefSeq Reference Bacterial Genomes [link](https://www.ncbi.nlm.nih.gov/refseq/)
 
+## Workflow
+
+![My image](https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance/blob/master/AbxResistanceMetagenomics.png)
+
 ## Deliverables
 
 Documented workflow with containerized tools
