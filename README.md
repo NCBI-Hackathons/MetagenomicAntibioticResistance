@@ -21,7 +21,12 @@ or
 FASTQ files
 
 Output:
-
+Table (in CSV or TAB-delimited format) with the next columns:
+- Accession number (Nucleotide/Protein)
+- Name
+- ARO (Antibiotic Resistance Ontology)
+- Score
+- Resistance type
 
 Warnings:
 
