@@ -4,12 +4,12 @@
 ##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Dan, Sherif Farag - Writers: Matthew Moss, Alexey Rakov
 
 
-*Objective* - Create a reusable, reproducible, scalable, interoperable workflow 
+*Objective*: Create a reusable, reproducible, scalable, interoperable workflow 
 to locate antimicrobial resistant genomic signatures in SRA shotgun sequencing (metagenomics) datasets
 
 ## Dependencies:computer:
 
-###Software:
+*Software:*
 
 magicBLAST 1.3b [link](https://github.com/boratyng/magicblast)
 
@@ -19,9 +19,9 @@ STAR [link](https://github.com/alexdobin/STAR/releases)
 
 Docker [link](https://www.docker.com/)
 
-###Pre-assembled DBs for BLAST:
+*Pre-assembled DBs for BLAST:*
 
-hg19 [link](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.35_GRCh38.p9/GCF_000001405.35_GRCh38.p9_genomic.fna.gz)
+hg19 [link](https://www.ncbi.nlm.nih.gov/refseq/)
 
 CARD (Comprehensive Antibiotic Resistance Database) DB [link](https://card.mcmaster.ca/)
 
@@ -35,7 +35,7 @@ RefSeq Reference Bacterial Genomes [link](https://www.ncbi.nlm.nih.gov/refseq/)
 
 Documented workflow with containerized tools
 
-## Instalation
+## Installation
 
 ## Usage
 
