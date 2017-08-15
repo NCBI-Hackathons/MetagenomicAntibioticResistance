@@ -11,7 +11,7 @@ to locate antimicrobial resistant genomic signatures in SRA shotgun sequencing (
 
 *Software:*
 
-magicBLAST 1.3b [link](https://github.com/boratyng/magicblast)
+Magic-BLAST 1.3b [link](https://github.com/boratyng/magicblast)
 
 SAMtools 1.3.1 [link](http://www.htslib.org/)
 
