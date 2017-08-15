@@ -15,6 +15,11 @@ Instalation:
 Usage:
 scaleupUpScript.sh <options> -S SRA -o output_directory
 
+Input:
+SRA accession numbers (ERR or SRR)
+or
+FASTQ files
+
 Output:
 
 
