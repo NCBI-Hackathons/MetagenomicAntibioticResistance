@@ -6,6 +6,18 @@ Lead: Steve - SysAdm: Greg, Dan, Sherif - Writers: Matt, Aleksei
 <i>Objective</i> - Create a reusable, reproducible, scalable, interoperable workflow 
 to locate antimicrobial resistant genomic signatures in SRA shot-gun sequencing (metagenomics) Datasets
 
+<i>Dependecies</i>
+Software:
+- MagicBLAST 1.3beta
+- SAMtools 1.3.1
+- STAR
+- Docker
+
+Pre-assembled DBs for BLAST:
+- hg19
+- CARD (Comprehensive Antibiotic Resistance Database) DB
+- RefSeq Reference Bacterial Genomes
+
 <i>Deliverables</i> - Documented workflow with containerized tools
 
 
