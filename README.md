@@ -1,7 +1,7 @@
 # MetagenomicAntibioticResistance
 
 ### Locating Antibiotic Resistance Signatures in Metagenomic Datasets
-##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Dan, Sherif Farag - Writers: Matthew Moss, Alexey Rakov
+##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Dan, Sherif Farag - Writers: Matthew Moss, Alexey V. Rakov
 
 
 *Objective*: Create a reusable, reproducible, scalable, interoperable workflow 
@@ -19,7 +19,7 @@ STAR [link](https://github.com/alexdobin/STAR/releases)
 
 Docker [link](https://www.docker.com/)
 
-*Pre-assembled DBs for BLAST:*
+*DBs used for BLAST databases:*
 
 hg19 [link](https://www.ncbi.nlm.nih.gov/refseq/)
 
@@ -36,6 +36,8 @@ RefSeq Reference Bacterial Genomes [link](https://www.ncbi.nlm.nih.gov/refseq/)
 Documented workflow with containerized tools
 
 ## Installation
+
+
 
 ## Usage
 
