@@ -6,7 +6,8 @@ Lead: Steve - SysAdm: Greg, Dan, Sherif - Writers: Matt, Aleksei
 <i>Objective</i> - Create a reusable, reproducible, scalable, interoperable workflow 
 to locate antimicrobial resistant genomic signatures in SRA shot-gun sequencing (metagenomics) Datasets
 
-<i>Dependecies</i>
+<i>Dependencies</i>
+
 Software:
 - MagicBLAST 1.3beta
 - SAMtools 1.3.1
