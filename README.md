@@ -50,7 +50,7 @@ Step 5. Producing detailed output file(s) including names of detected bacterial 
 
 ## Deliverables
 
-Documented workflow with containerized tools
+Documented workflow with containerized tools in Docker
 
 ## Installation
 
@@ -58,7 +58,7 @@ Documented workflow with containerized tools
 
 ## Usage
 
-scaleupUpScript.sh <options> -S SRA -o output_directory
+main.sh <options> -S SRA -o output_directory
 
 ## Input file format
 
@@ -68,12 +68,14 @@ FASTQ files
 
 ## Output
 
-Table (in CSV or TAB-delimited format) with the next columns:
+1. Table (in CSV or TAB-delimited format) with the next columns:
 - Accession number (Nucleotide/Protein)
 - Name
 - ARO (Antibiotic Resistance Ontology)
 - Score
 - Resistance type
+
+2. Pie chart showing relative abundance of bacterial species in metagenomic sample.
 
 ## Warnings
 
