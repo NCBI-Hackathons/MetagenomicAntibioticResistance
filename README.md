@@ -17,8 +17,6 @@ SAMtools 1.3.1 [link](http://www.htslib.org/)
 
 FASTX-Toolkit [link](http://hannonlab.cshl.edu/fastx_toolkit/)
 
-STAR [link](https://github.com/alexdobin/STAR/releases)
-
 Docker [link](https://www.docker.com/)
 
 *DBs used for BLAST databases:*
