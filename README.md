@@ -99,7 +99,7 @@ FASTQ files
 - Score
 - Resistance type
 
-2. Pie chart showing relative abundance of bacterial species in metagenomic sample.
+2. Dot plot showing relative abundance of bacterial species in metagenomic sample.
 
 ## Warnings
 
