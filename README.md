@@ -61,10 +61,10 @@ Table (in CSV or TAB-delimited format) with the next columns:
 ## Warnings
 
 ## People/Team
-* Steve Tsang <tsang@mail.nih.gov>, NIH, NCI, Bethesda, MD
-* Greg Fedewa <fedewag@gmail.com>, UCSF, San Francisco, CA
-* Sherif Farag <farags@email.unc.edu>, UNC, Chapel Hill, NC
-* Matthew Moss <moss@cshl.edu>, CSHL, Cold Spring Harbor, NY
-* Dan <>, UCI, Irvine, CA
-* Alexey V. Rakov <rakovalexey@gmail.com>, UPenn, Philadelphia, PA
+* Steve Tsang, NCI/NIH, Bethesda, MD, <tsang@mail.nih.gov>
+* Greg Fedewa, UCSF, San Francisco, CA, <fedewag@gmail.com>
+* Sherif Farag, UNC, Chapel Hill, NC, <farags@email.unc.edu>
+* Matthew Moss, CSHL, Cold Spring Harbor, NY, <moss@cshl.edu>
+* Dan, UCI, Irvine, CA, <>
+* Alexey V. Rakov, UPenn, Philadelphia, PA, <rakovalexey@gmail.com>
 
