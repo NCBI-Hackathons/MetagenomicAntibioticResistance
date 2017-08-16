@@ -21,7 +21,7 @@ Docker [link](https://www.docker.com/)
 
 *DBs used for BLAST databases:*
 
-hg19 [link](https://www.ncbi.nlm.nih.gov/refseq/)
+hg19 [link](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml)
 
 CARD (Comprehensive Antibiotic Resistance Database) DB [link](https://card.mcmaster.ca/)
 
@@ -61,7 +61,7 @@ Table (in CSV or TAB-delimited format) with the next columns:
 ## Warnings
 
 ## People/Team
-* Steve Tsang, NCI/NIH, Bethesda, MD, <tsang@mail.nih.gov>
+* Steve Tsang, NCI/NIH, Gaithersburg, MD, <tsang@mail.nih.gov>
 * Greg Fedewa, UCSF, San Francisco, CA, <fedewag@gmail.com>
 * Sherif Farag, UNC, Chapel Hill, NC, <farags@email.unc.edu>
 * Matthew Moss, CSHL, Cold Spring Harbor, NY, <moss@cshl.edu>
