@@ -3,6 +3,7 @@
 ### A Simple Method for Extracting Antimicrobial Resistance Information from Metagenomes
 ##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Daniel Quang, Sherif Farag - Writers: Matthew Moss, Alexey V. Rakov
 
+Antibiotic resistance of bacterial pathogens remains a major threat to public health around the world. Fast and reliable extraction of antimicrobial resistance genomic signatures from large raw sequencing datasets obtained from human metagenomes is a key task for bioinformatics. **NastyBugs** is a versatile workflow for fast extracting of antimicrobial resistance genomic signatures from metagenomes.
 
 *Objective*: Create a reusable, reproducible, scalable, interoperable workflow 
 to locate antimicrobial resistant genomic signatures in SRA shotgun sequencing (metagenomics) datasets
@@ -45,7 +46,7 @@ Step 1.  Mapping sample SRR to human genome using Magic-BLAST:
 
 Step 2. Filtering reads mapped to human genome using SAMtools (Removal of host (human) genome from metagenomics data):
 ```
->samtools fasta -f 4 SRR5239736_human.sam -1 SRR5239736_read1.fasta  -2 SRR5239736_read2.fasta -0 SRR5239736_read0.fasta
+>samtools fasta -f 4 SRRXXXXXXX_human.sam -1 SRRXXXXXXX_read1.fasta  -2 SRRXXXXXXX_read2.fasta -0 SRRXXXXXXX_read0.fasta
 >fastx_clipper [-i INFILE] [-o OUTFILE]
 ```
 
@@ -101,6 +102,10 @@ FASTQ files
 2. Pie chart showing relative abundance of bacterial species in metagenomic sample.
 
 ## Warnings
+
+## Planned Features
+
+## F.A.Q.
 
 ## People/Team
 * Steve Tsang, NCI/NIH, Gaithersburg, MD, <tsang@mail.nih.gov>
