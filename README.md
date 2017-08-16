@@ -52,6 +52,7 @@ Step 2. Filtering reads mapped to human genome using SAMtools (Removal of host (
 
 Step 3. Searching 16S RNA taxonomic labels in RefSeq reference bacterial genomes database to identify microbial species presented in metagenome using Magic-BLAST:
 ```
+>magicblast13 -infmt fasta -query ~/test_run/SRRXXXXXXX_read1.fasta -query_mate ~/test_run/SRRXXXXXXX_read2.fasta -num_threads 12 -score 50 -penalty -3 -out ~/test_run/SRRXXXXXXX_refseq.sam -db ~/references/REFSEQ
 ```
 
 Step 4. Searching genes and SNPs from CARD database in metagenome using Magic-BLAST:
