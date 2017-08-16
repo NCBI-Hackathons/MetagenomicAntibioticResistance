@@ -1,7 +1,7 @@
 # MetagenomicAntibioticResistance
 
 ### A Simple Method for Extracting Antimicrobial Resistance Information from Metagenomes
-##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Dan, Sherif Farag - Writers: Matthew Moss, Alexey V. Rakov
+##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Daniel Quang, Sherif Farag - Writers: Matthew Moss, Alexey V. Rakov
 
 
 *Objective*: Create a reusable, reproducible, scalable, interoperable workflow 
@@ -23,7 +23,7 @@ Docker [link](https://www.docker.com/)
 
 *DBs used for BLAST databases:*
 
-hg19 [link](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml)
+NCBI GRCh37/USCS hg19 human reference genome [link](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml)
 
 CARD (Comprehensive Antibiotic Resistance Database) DB [link](https://card.mcmaster.ca/)
 
@@ -36,7 +36,7 @@ RefSeq Reference Bacterial Genomes [link](https://www.ncbi.nlm.nih.gov/refseq/)
 ## Workflow method
 
 The pipeline use three databases that should be downloaded with the script:
-1.	**hg19 human genome database** used for alignment and filtering reads of human origin from metagenomics samples.
+1.	**GRCh37/hg19 human reference genome database** used for alignment and filtering reads of human origin from metagenomics samples.
 2.	**CARD database** used for search of genomic signatures in the subset of reads unaligned to human genome.
 3.	**RefSeq reference bacterial genomes database** used for search and assigning of 16S RNA taxonomic labels the subset of reads unaligned to human genome.
 
@@ -109,6 +109,6 @@ FASTQ files
 * Greg Fedewa, UCSF, San Francisco, CA, <greg.fedewa@gmail.com>
 * Sherif Farag, UNC, Chapel Hill, NC, <farags@email.unc.edu>
 * Matthew Moss, CSHL, Cold Spring Harbor, NY, <moss@cshl.edu>
-* Dan, UCI, Irvine, CA, <>
+* Daniel Quang, UCI, Irvine, CA, <dxquang@uci.edu>
 * Alexey V. Rakov, UPenn, Philadelphia, PA, <rakovalexey@gmail.com>
 
