@@ -53,7 +53,6 @@ Step 2. Filtering reads mapped to human genome using SAMtools (Removal of host (
 
 Step 3. Searching 16S RNA taxonomic labels in RefSeq reference bacterial genomes database to identify microbial species presented in metagenome using Magic-BLAST:
 ```
-
 ```
 
 Step 4. Searching genes and SNPs from CARD database in metagenome using Magic-BLAST:
@@ -66,7 +65,6 @@ Step 5. Converting SAM to BAM format and sorting using SAMtools:
 ```
 >samtools view -bS SRRXXXXXXX_SNP.sam | samtools sort - -o SRRXXXXXXX_SNP.bam
 >samtools view -bS SRRXXXXXXX_CARD_gene.sam | samtools sort - -o SRRXXXXXXX_CARD_gene.bam
-
 ```
 
 Step 6. Producing detailed output file(s) including names of detected bacterial species and resistance genes with statistical metrics in text and graphical formats.
