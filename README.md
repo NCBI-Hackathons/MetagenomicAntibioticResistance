@@ -1,4 +1,4 @@
-# MetagenomicAntibioticResistance
+# NastyBugs
 
 ### A Simple Method for Extracting Antimicrobial Resistance Information from Metagenomes
 ##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Daniel Quang, Sherif Farag - Writers: Matthew Moss, Alexey V. Rakov
