@@ -4,7 +4,7 @@ for sra in $FILES
 do
   #echo "processing $sra"
   # First we align to a host so we can subtract host reads 
-  magicblast -sra $sra -db references/human -num_threads 12 -score 50 -penalty -3 -out ~/references/$sra.human.sam
+  magicblast13 -sra $sra -db references/human -num_threads 12 -score 50 -penalty -3 -out ~/references/$sra.human.sam
   samtools fasta -f 4 ~/refereneces/$sra.human.sam -1 tmp_read_one -2 tmp_read_two -0 tmp_read_zero
   # determine if SRA is PE or SE. then run magicblast on the nonhost reads
   READ1COUNT= wc -l $tmp_read_one
