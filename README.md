@@ -15,6 +15,8 @@ Magic-BLAST 1.3b [link](https://github.com/boratyng/magicblast)
 
 SAMtools 1.3.1 [link](http://www.htslib.org/)
 
+FASTX-Toolkit [link](http://hannonlab.cshl.edu/fastx_toolkit/)
+
 STAR [link](https://github.com/alexdobin/STAR/releases)
 
 Docker [link](https://www.docker.com/)
@@ -38,15 +40,36 @@ The pipeline use three databases that should be downloaded with the script:
 2.	**CARD database** used for search of genomic signatures in the subset of reads unaligned to human genome.
 3.	**RefSeq reference bacterial genomes database** used for search and assigning of 16S RNA taxonomic labels the subset of reads unaligned to human genome.
 
-Step 1. Removal of host (human) genome from metagenomics data using Magic-BLAST.
+Step 1.  Mapping sample SRR to human genome using Magic-BLAST:
+```
+>magicblast13 -sra SRRXXXXXXX -db ~/references/human -num_threads 12 -score 50 -penalty -3 -out ~/test_run/SRRXXXXXXX_human.sam
+```
 
-Step 2. Filtering of unmapped reads using SAMtools.
+Step 2. Filtering reads mapped to human genome using SAMtools (Removal of host (human) genome from metagenomics data):
+```
+>samtools fasta -f 4 SRR5239736_human.sam -1 SRR5239736_read1.fasta  -2 SRR5239736_read2.fasta -0 SRR5239736_read0.fasta
+>fastx_clipper [-i INFILE] [-o OUTFILE]
+```
 
-Step 3. Searching 16S RNA taxonomic labels in RefSeq reference bacterial genomes database to identify microbial species presented in metagenome using Magic-BLAST.
+Step 3. Searching 16S RNA taxonomic labels in RefSeq reference bacterial genomes database to identify microbial species presented in metagenome using Magic-BLAST:
+```
 
-Step 4. Searching genes and SNPs from CARD database in metagenome using Magic-BLAST.
+```
 
-Step 5. Producing detailed output file(s) including names of detected bacterial species and resistance genes with statistical metrics in text and graphical formats.
+Step 4. Searching genes and SNPs from CARD database in metagenome using Magic-BLAST:
+```
+>magicblast13 -infmt fasta -query ~/test_run/SRRXXXXXXX_read1.fasta -query_mate ~/test_run/SRRXXXXXXX_read2.fasta -num_threads 12 -score 50 -penalty -3 -out ~/test_run/SRRXXXXXXX_CARD_SNP.sam -db ~/references/CARD_variant
+>magicblast13 -infmt fasta -query SRRXXXXXXX_read1.fasta -query_mate SRRXXXXXXX_read2.fasta -num_threads 12 -score 50 -penalty -3 -out SRRXXXXXXX_CARD_gene.sam -db ~/references/CARD_gene
+```
+
+Step 5. Converting SAM to BAM format and sorting using SAMtools:
+```
+>samtools view -bS SRRXXXXXXX_SNP.sam | samtools sort - -o SRRXXXXXXX_SNP.bam
+>samtools view -bS SRRXXXXXXX_CARD_gene.sam | samtools sort - -o SRRXXXXXXX_CARD_gene.bam
+
+```
+
+Step 6. Producing detailed output file(s) including names of detected bacterial species and resistance genes with statistical metrics in text and graphical formats.
 
 ## Deliverables
 
