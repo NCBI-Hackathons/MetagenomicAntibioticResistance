@@ -36,8 +36,17 @@ RefSeq Reference Bacterial Genomes [link](https://www.ncbi.nlm.nih.gov/refseq/)
 The pipeline use three databases that should be downloaded with the script:
 1.	**hg19 human genome database** used for alignment and filtering reads of human origin from metagenomics samples.
 2.	**CARD database** used for search of genomic signatures in the subset of reads unaligned to human genome.
-3.	**RefSeq reference bacterial genome database** used for search and assigning of 16S RNA taxonomic labels the subset of reads unaligned to human genome.
+3.	**RefSeq reference bacterial genomes database** used for search and assigning of 16S RNA taxonomic labels the subset of reads unaligned to human genome.
 
+Step 1. Removal of host (human) genome from metagenomics data using Magic-BLAST.
+
+Step 2. Filtering of unmapped reads using SAMtools.
+
+Step 3. Searching 16S RNA taxonomic labels in RefSeq reference bacterial genomes database to identify microbial species presented in metagenome using Magic-BLAST.
+
+Step 4. Searching genes and SNPs from CARD database in metagenome using Magic-BLAST.
+
+Step 5. Producing detailed output file(s) including names of detected bacterial species and resistance genes with statistical metrics in text and graphical formats.
 
 ## Deliverables
 
