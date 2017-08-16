@@ -53,8 +53,12 @@ Step 5. Producing detailed output file(s) including names of detected bacterial 
 Documented workflow with containerized tools in Docker
 
 ## Installation
-
-
+```
+sudo docker images
+sudo docker pull stevetsa/docker-magicblast
+sudo docker run -it stevetsa/docker-magicblast
+sudo docker ps -a 
+```
 
 ## Usage
 
