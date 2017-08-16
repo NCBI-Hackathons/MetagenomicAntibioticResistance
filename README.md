@@ -11,21 +11,21 @@ to locate antimicrobial resistant genomic signatures in SRA shotgun sequencing (
 
 *Software:*
 
-Magic-BLAST 1.3b [link](https://github.com/boratyng/magicblast)
+[Magic-BLAST 1.3b](https://github.com/boratyng/magicblast)
 
-SAMtools 1.3.1 [link](http://www.htslib.org/)
+[SAMtools 1.3.1](http://www.htslib.org/)
 
-FASTX-Toolkit [link](http://hannonlab.cshl.edu/fastx_toolkit/)
+[FASTX-Toolkit](http://hannonlab.cshl.edu/fastx_toolkit/)
 
-Docker [link](https://www.docker.com/)
+[Docker](https://www.docker.com/)
 
 *DBs used for BLAST databases:*
 
-NCBI GRCh37/USCS hg19 human reference genome [link](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml)
+[NCBI GRCh37/UCSC hg19 human reference genome](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml)
 
-CARD (Comprehensive Antibiotic Resistance Database) DB [link](https://card.mcmaster.ca/)
+[CARD (Comprehensive Antibiotic Resistance Database) DB](https://card.mcmaster.ca/)
 
-RefSeq Reference Bacterial Genomes [link](https://www.ncbi.nlm.nih.gov/refseq/)
+[RefSeq Reference Bacterial Genomes](https://www.ncbi.nlm.nih.gov/refseq/)
 
 ## Workflow
 
