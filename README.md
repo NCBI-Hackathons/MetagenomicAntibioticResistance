@@ -93,13 +93,13 @@ FASTQ files
 ## Output
 
 1. Table (in CSV or TAB-delimited format) with the next columns:
-- Accession number (Nucleotide/Protein)
-- Name
+- RefSeq accession number (Nucleotide)
+- Genus
+- Resistance gene
 - ARO (Antibiotic Resistance Ontology)
-- Score
-- Resistance type
+- Score (number of mapped reads per 1kb)
 
-2. Dot plot showing relative abundance of bacterial species in metagenomic sample.
+2. Dot plot showing relative abundance of antimicrobial resistance/bacterial species in metagenomic sample.
 
 ## Warnings
 
