@@ -102,6 +102,9 @@ FASTQ files
 
 2. Dot plot showing relative abundance of antimicrobial resistance/bacterial species in metagenomic sample.
 
+3. Pie chart vizualization of bacterial abundance in the given dataset (Ondov BD, Bergman NH, and Phillippy AM. Interactive metagenomic visualization in a Web browser. BMC Bioinformatics. 2011 Sep 30; 12(1):385).
+![My image](https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance/blob/master/MetagenomeVisualization.png)
+
 ## Warnings
 
 ## Planned Features
