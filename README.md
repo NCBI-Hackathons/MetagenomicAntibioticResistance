@@ -31,6 +31,14 @@ RefSeq Reference Bacterial Genomes [link](https://www.ncbi.nlm.nih.gov/refseq/)
 
 ![My image](https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance/blob/master/AbxResistanceMetagenomics.png)
 
+## Workflow method
+
+The pipeline use three databases that should be downloaded with the script:
+1.	*hg19 human genome database* used for alignment and filtering reads of human origin from metagenomics samples.
+2.	*CARD database* used for search of genomic signatures in the subset of reads unaligned to human genome.
+3.	*RefSeq reference bacterial genome database* used for search and assigning of 16S RNA taxonomic labels the subset of reads unaligned to human genome.
+
+
 ## Deliverables
 
 Documented workflow with containerized tools
