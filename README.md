@@ -106,7 +106,7 @@ FASTQ files
 
 ## People/Team
 * Steve Tsang, NCI/NIH, Gaithersburg, MD, <tsang@mail.nih.gov>
-* Greg Fedewa, UCSF, San Francisco, CA, <fedewag@gmail.com>
+* Greg Fedewa, UCSF, San Francisco, CA, <greg.fedewa@gmail.com>
 * Sherif Farag, UNC, Chapel Hill, NC, <farags@email.unc.edu>
 * Matthew Moss, CSHL, Cold Spring Harbor, NY, <moss@cshl.edu>
 * Dan, UCI, Irvine, CA, <>
