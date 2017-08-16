@@ -2,7 +2,7 @@ FILES=./List_IDs
 OUT_DIR=pwd
 for sra in $FILES
 do
-  #echo "processing $sra"
+  echo "processing $sra"
   # First we align to a host so we can subtract host reads 
   magicblast13 -sra $sra -db references/human -num_threads 12 -score 50 -penalty -3 -out ~/references/$sra.human.sam
   samtools fasta -f 4 ~/refereneces/$sra.human.sam -1 tmp_read_one -2 tmp_read_two -0 tmp_read_zero
