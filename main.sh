@@ -1,8 +1,11 @@
+#!/bin/bash
+#
+# NastyBugs: a simple pipeline for extracting antimicrobial resistance information from metagenomic sequencing
+
 FILES=./List_IDs
 OUT_DIR=pwd
 
-for sra in $FILES
-do
+for sra in $FILES; do
   echo "processing $sra"
   # First we align to a host so we can subtract host reads 
   magicblast13 -sra $sra -db references/human -num_threads 12 -score 50 -penalty -3 -out $OUT_DIR/$sra.human.sam
@@ -14,14 +17,16 @@ do
   read0_count= wc -l $tmp_read_zero
 
   # run magicblast using the CARD gene_homology 
-  if [$read0_count -lt $read1_count -a $read1_count -eq $read2_count ]; then
+  if [[ ($read0_count -lt $read1_count) && ($read1_count -eq $read2_count) ]]; then
 	  fastx_clipper -i $tmp_read_one -o $tmp_read_one_trimmed # is this line still needed? 
 	  fastx_clipper -i $tmp_read_two -o $tmp_read_two_trimmed # is this line still needed? 
     # should we sync the FASTQs here?
 	  magicblast13 -num_threads 12  -infmt fasta -query $tmp_read_one_trimmed -query_mate $tmp_read_two_trimmed -score 50 -penalty -3 -out $OUT_DIR/$sra.CARD_gene.sam -db ~/references/CARD_gene
-  else [$read1_count -lt $read0_count -a -s $read0_count ]; then
+  elif [[ ($read1_count -lt $read0_count) && (-s $read0_count) ]]; then
 	  fastx_clipper -i $tmp_read_zero -o $tmp_read_zero_trimmed
 	  magicblast13 -num_threads 12 -infmt fasta -query $tmp_read_zero_trimmed -score 50 -penalty -3 -out $OUT_DIR/$sra.CARD_gene.sam -db ~/references/CARD_gene  
+  else 
+    echo "ERROR: no reads to align to CARD databases"
   fi
 
   # Convert the gene_homology aligned SAM to BAM and sort. Delete SAM to save space
@@ -30,10 +35,12 @@ do
   
 
   # run magic blast using CARD gene_variant
-  if [$read0_count -lt $read1_count -a $read1_count -eq $read2_count ]; then
+  if [[ ($read0_count -lt $read1_count) && ($read1_count -eq $read2_count) ]]; then
     magicblast13 -num_threads 12 -infmt fasta -query $tmp_read_one_trimmed -query_mate $tmp_read_two_trimmed -score 50 -penalty -3 -out $OUT_DIR/$sra.CARD_variant.sam -db ~/references/CARD_variant
-  else [$read1_count -lt $read0_count -a -s $read0_count ]; then
+  elif [[ ($read1_count -lt $read0_count) && (-s $read0_count) ]]; then
     magicblast13 -num_threads 12 -infmt fasta -query $tmp_read_zero_trimmed -score 50 -penalty -3 -out $OUT_DIR/$sra.CARD_variant.sam -db ~/references/CARD_variant
+  else 
+    echo "ERROR: no reads to align to CARD databases"
   fi
 
   # Convert the gene_variant aligned SAM to BAM and sort. Delete SAM to save space
