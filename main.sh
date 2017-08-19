@@ -1,10 +1,11 @@
 FILES=./List_IDs
 OUT_DIR=pwd
+
 for sra in $FILES
 do
   echo "processing $sra"
   # First we align to a host so we can subtract host reads 
-  magicblast13 -sra $sra -db references/human -num_threads 12 -score 50 -penalty -3 -out ~/references/$sra.human.sam
+  magicblast13 -sra $sra -db references/human -num_threads 12 -score 50 -penalty -3 -out $OUT_DIR/$sra.human.sam
   samtools fasta -f 4 ~/refereneces/$sra.human.sam -1 tmp_read_one -2 tmp_read_two -0 tmp_read_zero
   # should we delete the SAM? 
   # determine if SRA is PE or SE. then run magicblast on the nonhost reads. This could be done by looking at the meta data, too
@@ -39,7 +40,7 @@ do
   samtools view -bS $OUT_DIR/$sra.CARD_variant.sam | samtools sort - $OUT_DIR/$sra.CARD_variant.bam # should we output the unaligned reads to a different bam?
   rm $OUT_DIR/$sra.CARD_variant.sam
 
-  # process above bamfiles
+  # process the above bamfiles into a output-usable form 
   
 
 done > folderOfFinal_output
