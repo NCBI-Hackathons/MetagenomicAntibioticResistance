@@ -16,19 +16,19 @@ This project was part of the [Summer 2017 NCBI Hackathon](https://ncbi-hackathon
 
 *Software:*
 
-[Magic-BLAST 1.3b](https://github.com/boratyng/magicblast)
+[Magic-BLAST 1.3b](https://github.com/boratyng/magicblast) is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
 
-[SAMtools 1.3.1](http://www.htslib.org/)
+[SAMtools 1.3.1](http://www.htslib.org/) is a suite of programs for interacting with high-throughput sequencing data.
 
-[FASTX-Toolkit](http://hannonlab.cshl.edu/fastx_toolkit/)
+[FASTX-Toolkit](http://hannonlab.cshl.edu/fastx_toolkit/) is a collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing.
 
-[Docker](https://www.docker.com/)
+[Docker](https://www.docker.com/) is the leading software container platform.
 
 *DBs used for BLAST databases:*
 
 [NCBI GRCh37/UCSC hg19 human reference genome](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml)
 
-[CARD (Comprehensive Antibiotic Resistance Database) DB](https://card.mcmaster.ca/)
+[CARD (Comprehensive Antibiotic Resistance Database)](https://card.mcmaster.ca/)
 
 [RefSeq Reference Bacterial Genomes](https://www.ncbi.nlm.nih.gov/refseq/)
 
