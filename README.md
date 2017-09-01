@@ -3,7 +3,9 @@
 ### A Simple Method for Extracting Antimicrobial Resistance Information from Metagenomes
 ##### Hackathon team: Lead: Steve Tsang - SysAdmins: Greg Fedewa, Daniel Quang, Sherif Farag - Writers: Matthew Moss, Alexey V. Rakov
 
-Antibiotic resistance (AMR) of bacterial pathogens is a growing public health threat around the world. Fast and reliable extraction of antimicrobial resistance genomic signatures from large raw sequencing datasets obtained from human metagenomes is a key task for bioinformatics. **NastyBugs** is a versatile workflow for fast extracting of antimicrobial resistance genomic signatures from metagenomes.
+Antibiotic resistance (AMR) of bacterial pathogens is a growing public health threat around the world. Fast and reliable extraction of antimicrobial resistance genomic signatures from large raw sequencing datasets obtained from human metagenomes is a key task for bioinformatics.
+
+**NastyBugs** is a versatile workflow for fast extracting of antimicrobial resistance genomic signatures from metagenomic sequencing data.
 
 *Objective*: Create a reusable, reproducible, scalable, and interoperable workflow 
 to locate antimicrobial resistant genomic signatures in SRA shotgun sequencing (including metagenomics) datasets.
@@ -111,16 +113,26 @@ FASTQ files
 
 ![My image](https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance/blob/master/MetagenomeVisualization.png)
 
+## Validation
+
+The NastyBugs workflow was validated using the next SRAs: ERR1600439 and SRR5239736.
+
 ## Planned Features
 1. Code optimization.
-2. More detailed output.
+2. Improved more detailed output.
+3. Prediction of novel resistance genes (using HMM).
 
 ## F.A.Q.
 1. How to cite?
+
 Currently, a manuscript "NastyBugs: a simple method for extracting antimicrobial resistance information from metagenomes" in preparation. For a moment, just cite this GitHub repo: https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance/.
+
 2. How to use?
+
 Follow the instructions on this page.
+
 3. What if I need a help?
+
 Feel free to contact authors if you need help.
 
 ## Reference
