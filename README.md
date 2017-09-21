@@ -16,7 +16,7 @@ This project was part of the [Summer 2017 NCBI Hackathon](https://ncbi-hackathon
 
 *Software:*
 
-[Magic-BLAST 1.3b](https://github.com/boratyng/magicblast) is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
+[Magic-BLAST 1.3b](https://ncbi.github.io/magicblast/) is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
 
 [SAMtools 1.3.1](http://www.htslib.org/) is a suite of programs for interacting with high-throughput sequencing data.
 
