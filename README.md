@@ -109,7 +109,7 @@ FASTQ files
 
 2. Dot plot showing relative abundance of antimicrobial resistance/bacterial species in metagenomic sample.
 
-3. Pie chart vizualization of bacterial abundance in the given dataset using Krona (Ondov BD, Bergman NH, and Phillippy AM. Interactive metagenomic visualization in a Web browser. BMC Bioinformatics. 2011 Sep 30; 12(1):385).
+3. Pie chart vizualization of bacterial abundance in the given dataset using Krona ([Ondov BD, Bergman NH, and Phillippy AM. Interactive metagenomic visualization in a Web browser. BMC Bioinformatics. 2011 Sep 30; 12(1):385](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-385)).
 
 ![My image](https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance/blob/master/MetagenomeVisualization.png)
 
@@ -125,7 +125,7 @@ The NastyBugs workflow was validated using the next SRAs: ERR1600439 and SRR5239
 ## F.A.Q.
 1. How to cite?
 
-Tsang H, Moss M, Fedewa G et al. NastyBugs: A simple method for extracting antimicrobial resistance information from metagenomes [version 1; referees: awaiting peer review]. F1000Research 2017, 6:1971 (doi:10.12688/f1000research.12781.1)
+Tsang H, Moss M, Fedewa G et al. NastyBugs: A simple method for extracting antimicrobial resistance information from metagenomes [version 1; referees: awaiting peer review]. F1000Research 2017, 6:1971 [doi: 10.12688/f1000research.12781.1](https://f1000research.com/articles/6-1971/)
 
 2. How to use?
 
@@ -137,7 +137,7 @@ Feel free to contact authors if you need help.
 
 ## Reference
 
-Tsang H, Moss M, Fedewa G, Farag S, Quang D, Rakov AV, Busby B. NastyBugs: A simple method for extracting antimicrobial resistance information from metagenomes [version 1; referees: awaiting peer review]. F1000Research 2017, 6:1971 (doi:10.12688/f1000research.12781.1)
+Tsang H, Moss M, Fedewa G, Farag S, Quang D, Rakov AV, Busby B. NastyBugs: A simple method for extracting antimicrobial resistance information from metagenomes [version 1; referees: awaiting peer review]. F1000Research 2017, 6:1971 [doi: 10.12688/f1000research.12781.1](https://f1000research.com/articles/6-1971/)
 
 ## People/Team
 * [Steve Tsang](https://github.com/stevetsa), NCI/NIH, Gaithersburg, MD, <tsang@mail.nih.gov>
