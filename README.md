@@ -16,7 +16,7 @@ This project was part of the [Summer 2017 NCBI Hackathon](https://ncbi-hackathon
 
 *Software:*
 
-[Magic-BLAST 1.3b](https://ncbi.github.io/magicblast/) is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
+[Magic-BLAST 1.3](https://ncbi.github.io/magicblast/) is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
 
 [SAMtools 1.3.1](http://www.htslib.org/) is a suite of programs for interacting with high-throughput sequencing data.
 
@@ -125,7 +125,7 @@ The NastyBugs workflow was validated using the next SRAs: ERR1600439 and SRR5239
 ## F.A.Q.
 1. How to cite?
 
-Currently, a manuscript "NastyBugs: a simple method for extracting antimicrobial resistance information from metagenomes" in preparation. For a moment, just cite this GitHub repo: https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance/.
+Tsang H, Moss M, Fedewa G et al. NastyBugs: A simple method for extracting antimicrobial resistance information from metagenomes [version 1; referees: awaiting peer review]. F1000Research 2017, 6:1971 (doi:10.12688/f1000research.12781.1)
 
 2. How to use?
 
@@ -137,7 +137,7 @@ Feel free to contact authors if you need help.
 
 ## Reference
 
-A draft manuscript describing NastyBugs may be found [here](https://docs.google.com/document/d/1Os78YUUkQ3TwB1IO6PsQG8jCNAPURIMXQC7Yqjf767U/).
+Tsang H, Moss M, Fedewa G, Farag S, Quang D, Rakov AV, Busby B. NastyBugs: A simple method for extracting antimicrobial resistance information from metagenomes [version 1; referees: awaiting peer review]. F1000Research 2017, 6:1971 (doi:10.12688/f1000research.12781.1)
 
 ## People/Team
 * [Steve Tsang](https://github.com/stevetsa), NCI/NIH, Gaithersburg, MD, <tsang@mail.nih.gov>
